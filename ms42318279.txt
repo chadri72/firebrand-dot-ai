@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "firebrand.ai",
+  "Id": "b1c5a3e4-beda-481c-8195-2f345439ced9"
+}
