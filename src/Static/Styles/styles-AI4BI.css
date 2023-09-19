@@ -1,0 +1,76 @@
+:root {
+	--rust:#CD6C36;
+	--blue: #132034;
+	--teal: #12627B;
+	--cream: #F5F5EC;
+	--graphite: #0C1111;
+}
+
+@font-face{
+font-family: Elza-Narrow-Light;
+src: url('../Fonts/ElzaTrial-NarrowLight.otf');}
+
+@font-face{
+font-family: Elza-Narrow;
+src: url('../Fonts/ElzaTrial-Narrow.otf');}
+
+@font-face{
+font-family: Elza-Narrow-Medium;
+src: url('../Fonts/ElzaTrial-NarrowMedium.otf');}
+
+@font-face{
+font-family: Elza-Narrow-Semi;
+src: url('../Fonts/ElzaTrial-NarrowSemibold.otf');}
+
+@font-face{
+font-family: SF-Pro-Light;
+src: url('../Fonts/SF-Pro-Display-Light.otf');}
+
+@font-face{
+font-family: SF-Pro-Regular;
+src: url('../Fonts/SF-Pro-Display-Regular.otf');}
+
+@font-face{
+font-family: SF-Pro-Medium;
+src: url('../Fonts/SF-Pro-Display-Medium.otf');}
+
+@font-face{
+font-family: SF-Pro-Bold;
+src: url('../Fonts/SF-Pro-Display-Bold.otf');}
+
+/**************************************************/
+/**************************************************/
+/**************************************************/
+
+
+body, html {font-family: 'SF-Pro-Regular';}
+
+
+.ai4bi > .col-md-2 {width:80px;}
+
+
+.word-by-word {
+  line-height:1.5;
+  font-size: 30px; /* Set the desired font size */
+  overflow: hidden;
+}
+
+/* Define the animation */
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Apply the animation to each word */
+.word-by-word span {
+  display: inline-block;
+  opacity: 0;
+  animation: reveal 0.1s forwards;
+  margin-right: 7.4px; /* Adjust the spacing between words */
+}
